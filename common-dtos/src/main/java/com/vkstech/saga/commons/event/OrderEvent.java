@@ -1,11 +1,13 @@
 package com.vkstech.saga.commons.event;
 
 import com.vkstech.saga.commons.dto.OrderRequestDto;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.UUID;
 
+@Data
 @NoArgsConstructor
 public class OrderEvent implements Event {
 
