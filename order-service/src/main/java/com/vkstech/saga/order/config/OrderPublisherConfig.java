@@ -17,7 +17,7 @@ public class OrderPublisherConfig {
     }
 
     @Bean
-    public Supplier<Flux<OrderEvent>> orderSuppplier(Sinks.Many<OrderEvent> sinks) {
+    public Supplier<Flux<OrderEvent>> orderSupplier(Sinks.Many<OrderEvent> sinks) {
         return sinks::asFlux;
     }
 }
